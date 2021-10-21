@@ -1,0 +1,24 @@
+baseurl = "/"
+host = "https:/mods.pages.dev"
+title = "Manfred Costa Blanca Homes"
+relativeURLs = true
+
+[[module.imports]]
+path = "github.com/manfredcostahomes/property"
+
+  [[module.imports.mounts]]
+  source = "content"
+  target = "content"
+
+
+[taxonomies]
+  home = "homes"
+
+[outputs]
+    page = ["json","html"]
+    section = ["json"] 
+    home = ["json","html"]
+    contact = ["html"]
+    policy = ["html"]
+
+
